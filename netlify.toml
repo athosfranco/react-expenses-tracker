@@ -1,0 +1,4 @@
+[build]
+base = "."   ///Diretório que vai servir como base para o deploy. '.' indica que é o mesmo diretório do arquivo de configuração.
+command = "npm run build"   ///Comando a ser executado para iniciar o deployment
+publish = "./build"  ////Qual build package publicar
