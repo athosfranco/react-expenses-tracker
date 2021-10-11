@@ -12,39 +12,82 @@
   display: block;
 }
 
-.new-expense__control select {
+.new-expense__control__select {
   font: inherit;
-  padding: 0.5rem;
-  border-radius: 6px;
+  font-size: 1.1rem;
+  padding: 12px 15px 12px 24px;
+  border-radius: 2rem;
+  outline: none;
+  user-select: none;
   border: 1px solid #ccc;
   width: 20rem;
   max-width: 100%;
+  transition: 0.2s ease;
 }
 
-.new-expense__control input {
+.new-expense__control__select:focus {
+  border: 1px solid #41444b;
+  transition: 0.2s ease;
+}
+
+.new-expense__control__input {
   font: inherit;
-  padding: 0.5rem;
-  border-radius: 6px;
+  padding: 12px 15px 12px 24px;
+  border-radius: 2rem;
   border: 1px solid #ccc;
   width: 20rem;
   max-width: 100%;
+  outline: none;
+  user-select: none;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.new-expense__control__input:focus {
+  border: 1px solid #41444b;
+  transition: 0.2s ease;
+}
+
+.new-expense__control__error {
+  font: inherit;
+  padding: 12px 15px 12px 24px;
+  border-radius: 2rem;
+  border: 1px solid #ff4848;
+  width: 20rem;
+  max-width: 100%;
+  outline: none;
+  user-select: none;
+  text-align: center;
 }
 
 .new-expense__actions {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-expense__actions button {
+  padding: 1rem !important;
+}
+
+.new-expense__control p {
+  margin: 0 auto;
+  color: #ff4848;
+  font-style: italic;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
   .new-expense__control input {
     font-size: 1.1rem;
-    padding: 0.5rem;
+    padding: 8px 10px 8px 12px;
     width: 19rem;
   }
 
   .new-expense__control select {
     font: inherit;
-    padding: 0.5rem;
+    padding: 8px 10px 8px 12px;
     width: 19rem;
     font-size: 1.1rem;
+    text-align: center;
   }
 }

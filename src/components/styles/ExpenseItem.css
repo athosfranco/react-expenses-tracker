@@ -13,6 +13,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #2a2a2a;
+  cursor: pointer;
 }
 
 .expense-item:hover {
@@ -28,7 +29,7 @@
   flex-flow: column-reverse;
   justify-content: space-between;
   flex: 1;
-  cursor: default;
+  cursor: pointer;
 }
 
 .expense-item h2 {
@@ -36,7 +37,8 @@
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  cursor: default;
+  cursor: pointer;
+  word-wrap: break-word;
 }
 
 .expense-item__price {
@@ -44,10 +46,10 @@
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background: #f8485e;
+  background: rgb(248, 72, 94);
   padding: 0.5rem;
   border-radius: 12px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .expense-item__descbox {
@@ -86,5 +88,13 @@
     justify-content: space-between;
     flex: 1;
     cursor: default;
+  }
+
+  .expense-item h2 {
+    margin: 0 0.5rem;
+  }
+
+  .expense-item__descbox span {
+    margin: 0 0.5rem;
   }
 }
