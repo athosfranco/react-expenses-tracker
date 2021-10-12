@@ -152,6 +152,7 @@ const ExpenseForm = (props) => {
                   type="date"
                   min="2018-01-01"
                   max={today}
+                  value={today}
                   className="new-expense__control__input"
                   ref={dateInputRef}
                 />
